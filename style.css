@@ -1,0 +1,172 @@
+:root{
+    --primary-Nutmeg:hsl(14, 45%, 36% );
+    --primary-DarkRaspberry:hsl(332, 51%, 32%);
+     --neutral-White: hsl(0, 0%, 100%);
+     --neutral-Roselhite: hsl(330, 100%, 98%);
+     --neutral-Eggshell: hsl(30, 54%, 90%);
+     --neutral-LightGrey: hsl(30, 18%, 87%);
+     --neutral-WengeBrown: hsl(30, 10%, 34%) ;
+      --neutral-DarkCharcoal: hsl(24, 5%, 18%);
+      --ff:"Young Serif","serif";
+       --Heading-Weight: 400;
+      --Content:"Outfit ", 'sans-serif';
+      --Content-Weight-1: 400;
+      --Content-Weight-2: 700;
+       --Content-font-size: 16px;
+       --margin-top:1.5rem;
+  }
+  *{
+      
+  
+      line-height: 1.5rem;
+      box-sizing: border-box;
+  }
+  body{
+      display: flex;
+      justify-content: center;
+      background-color: var(--neutral-Roselhite);
+  }
+  
+  .layout-recipe{
+      background-color: var(--neutral-White);
+      margin-block: 5rem; 
+      padding-block: 2rem;
+      padding-inline: 2rem;
+      border-radius: 1rem;
+      max-width: 41rem;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+  }
+  
+  .recipe-img{
+      border-radius: 1rem;
+      max-width:36rem;
+      min-height: 18rem;
+      background-image: url(/image-omelette.jpeg);
+      background-size: cover;
+      
+  }
+  
+  .title h1{
+     font-family:var(--ff);
+     font-weight: var(--Content-Weight-2);
+     color:var(--neutral-DarkCharcoal);
+     /* margin-top: var(--margin-top); */
+  }
+  .intro{
+      font-family: var(--Content);
+      font-weight: var(--Content-Weight-1);
+      font-size: var(--Content-font-size);
+      color: var(--neutral-WengeBrown);
+      /* margin-top: var(--margin-top); */
+  }
+  .recipe-time{
+      border-radius: 1rem;
+      background-color:rgb(253, 248, 248);
+      /* margin-top: var(--margin-top); */
+  }
+  .time-head{
+      color:var(--primary-Nutmeg) ;
+      font-family:var(--Content);
+      font-size:var(--Content-font-size);
+      font-weight: var(--Content-Weight-1);
+      /* margin-top: var(--margin-top); */
+  }
+  .time-details{
+       font-size: var(--Content-font-size);
+       font-family: var(--ff);
+       color: var(--neutral-WengeBrown);
+       /* margin-top: var(--margin-top); */
+  
+  }
+  .ing-head{
+      color:var(--primary-Nutmeg) ;
+      font-family:var(--Content);
+      font-size:var(--Content-font-size);
+      font-weight: var(--Content-Weight-1);
+      /* margin-top: var(--margin-top); */
+  }
+  .ing-list{
+      font-size: var(--Content-font-size);
+       font-family: var(--ff);
+       color: var(--neutral-WengeBrown);
+       /* margin-top: var(--margin-top); */
+       
+  }
+  hr{
+      margin-top:1.5rem;
+  }
+  .steps-head{
+      color:var(--primary-Nutmeg) ;
+      font-family:var(--Content);
+      font-size:var(--Content-font-size);
+      font-weight: var(--Content-Weight-1);
+      /* margin-top: var(--margin-top); */
+  }
+  .steps{
+      font-size: var(--Content-font-size);
+       font-family: var(--Content);
+       font-size: var(--Content-font-size);
+       color: var(--neutral-WengeBrown);
+       /* margin-top: var(--margin-top); */
+        
+  }
+  .nutri-head h2{
+      color:var(--primary-Nutmeg) ;
+      font-family:var(--Content);
+      font-weight: var(--Content-Weight-2);
+      /* margin-top: var(--margin-top); */
+  }
+  .nutri-head p{
+      color: var(--neutral-WengeBrown);
+      /* margin-top: var(--margin-top); */
+  }
+  ul.custom-bullet {
+      list-style-type: none; 
+  }
+  
+  ul.custom-bullet li::marker {
+      content: "•"; 
+      color: var(--primary-Nutmeg); 
+      font-size: 1.2em; 
+      
+  }
+  ul.custom2 {
+      list-style-type: none; 
+  }
+  
+  ul.custom2 li::marker {
+      content: "•"; 
+      color: var(--primary-Nutmeg); 
+      font-size: 1.2em; 
+     
+  }
+  .custom3{
+      counter-reset: custom-counter; 
+  }
+  .custom3 li{
+      counter-increment: custom-counter;
+      
+  }
+  .custom3 li::marker {
+      content: counter(custom-counter)". "; 
+      color: var(--primary-Nutmeg); 
+      font-size: 1em; 
+      font-weight:var(--Content-Weight-2);
+     
+  }
+  table{  
+      max-width:25rem; 
+  }
+  td{
+      color: var(--neutral-WengeBrown);
+      padding-inline: 0.9rem 14rem;
+      padding-block:0.5rem;
+      border-bottom: 1px solid grey;
+      
+  }
+  td:nth-child(2){
+      color:var(--primary-Nutmeg);
+      font-weight: var(--Content-Weight-2);
+  }
